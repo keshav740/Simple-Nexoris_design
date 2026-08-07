@@ -62,8 +62,8 @@ export default function Portfolio() {
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-blue-700 px-3.5 py-1.5 bg-blue-50 border border-blue-200/80 rounded-full shadow-xs">
             Selected Work
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-heading max-w-3xl">
-            Projects built for <span className="text-brand-gradient">real-world impact</span>.
+          <h1 className="text-4xl sm:text-5xl font-normal text-slate-900 tracking-tight leading-tight max-w-3xl">
+            Projects built for <span className="font-serif-italic text-brand-gradient px-1">real-world impact</span>.
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl leading-relaxed font-sans">
             Here are a few of the web applications, mobile products, and cloud platforms we've engineered for our clients.
@@ -108,7 +108,7 @@ export default function Portfolio() {
       {/* CTA */}
       <section className="py-16 bg-slate-900 text-white text-center">
         <div className="max-w-2xl mx-auto px-4 space-y-4">
-          <h2 className="text-3xl font-extrabold font-heading">Have a project you'd like to build?</h2>
+          <h2 className="text-3xl font-normal">Have a project you'd like to <span className="font-serif-italic text-brand-gradient px-1">build</span>?</h2>
           <p className="text-slate-400 text-base font-sans">We'd love to learn about your goals and discuss how we can help.</p>
           <Link
             href="/contact"

@@ -31,8 +31,8 @@ export default function Contact() {
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-blue-700 px-3.5 py-1.5 bg-blue-50 border border-blue-200/80 rounded-full shadow-xs">
             Contact Us
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-heading max-w-3xl">
-            Let's build your next <span className="text-brand-gradient">project together</span>.
+          <h1 className="text-4xl sm:text-5xl font-normal text-slate-900 tracking-tight leading-tight max-w-3xl">
+            Let's build your next <span className="font-serif-italic text-brand-gradient px-1">project together</span>.
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl leading-relaxed font-sans">
             Fill out the form below or email us directly. We respond to all inquiries within 24 hours.
@@ -47,7 +47,7 @@ export default function Contact() {
             
             {/* Contact Details */}
             <div className="md:col-span-5 space-y-6">
-              <h2 className="text-2xl font-extrabold text-slate-900 font-heading">Direct Contact</h2>
+              <h2 className="text-2xl font-normal text-slate-900">Direct <span className="font-serif-italic text-brand-gradient px-1">Contact</span></h2>
 
               <div className="space-y-4 text-sm text-slate-600 font-sans">
                 <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
@@ -88,7 +88,7 @@ export default function Contact() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
-                    <h3 className="text-xl font-bold text-slate-900 mb-2 font-heading">Send us a message</h3>
+                    <h3 className="text-xl font-normal text-slate-900 mb-2">Send us a <span className="font-serif-italic text-brand-gradient px-1">message</span></h3>
 
                     <div>
                       <label className="block text-xs font-semibold text-slate-700 mb-1 font-heading">Your Name *</label>

@@ -30,8 +30,8 @@ export default function About() {
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-blue-700 px-3.5 py-1.5 bg-blue-50 border border-blue-200/80 rounded-full shadow-xs">
             About Nexoris
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-heading max-w-3xl">
-            We build software that helps <span className="text-brand-gradient">modern companies scale</span>.
+          <h1 className="text-4xl sm:text-5xl font-normal text-slate-900 tracking-tight leading-tight max-w-3xl">
+            We build software that helps <span className="font-serif-italic text-brand-gradient px-1">modern companies scale</span>.
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl leading-relaxed font-sans">
             Founded in 2020, Nexoris is a software engineering agency based in San Francisco. We partner with startups and businesses to build web applications, mobile products, and cloud infrastructure.
@@ -43,8 +43,8 @@ export default function About() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-3 mb-16">
-            <h2 className="text-xs uppercase tracking-widest font-extrabold text-blue-600">Our Approach</h2>
-            <h3 className="text-3xl font-extrabold text-slate-900 font-heading">How we work with our clients</h3>
+            <h2 className="text-xs uppercase tracking-widest font-bold text-blue-600">Our Approach</h2>
+            <h3 className="text-3xl font-normal text-slate-900">How we work with our <span className="font-serif-italic text-brand-gradient px-1">clients</span></h3>
             <p className="text-slate-600 text-base leading-relaxed font-sans">
               We believe software development works best when engineers understand the business goals. We work as an extension of your team, providing senior-level execution without corporate bureaucracy.
             </p>
@@ -65,8 +65,8 @@ export default function About() {
       <section className="py-20 bg-slate-50/60 border-t border-slate-200/70">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl space-y-2 mb-12">
-            <h2 className="text-xs uppercase tracking-widest font-extrabold text-blue-600">Our Team</h2>
-            <h3 className="text-3xl font-extrabold text-slate-900 font-heading">Meet the engineers and designers</h3>
+            <h2 className="text-xs uppercase tracking-widest font-bold text-blue-600">Our Team</h2>
+            <h3 className="text-3xl font-normal text-slate-900">Meet the engineers and <span className="font-serif-italic text-brand-gradient px-1">designers</span></h3>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -89,7 +89,7 @@ export default function About() {
       {/* CTA */}
       <section className="py-16 bg-white text-center">
         <div className="max-w-2xl mx-auto px-4 space-y-5">
-          <h2 className="text-3xl font-extrabold text-slate-900 font-heading">Ready to work together?</h2>
+          <h2 className="text-3xl font-normal text-slate-900">Ready to work <span className="font-serif-italic text-brand-gradient px-1">together</span>?</h2>
           <p className="text-slate-600 text-base font-sans">Send us a message and we'll get back to you within 24 hours.</p>
           <Link
             href="/contact"

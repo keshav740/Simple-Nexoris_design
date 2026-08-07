@@ -99,8 +99,8 @@ export default function Home() {
               <span>SOFTWARE & CLOUD ENGINEERING</span>
             </span>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12] font-heading">
-              We build custom software and <span className="text-brand-gradient">cloud platforms</span> for modern businesses.
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-slate-900 tracking-tight leading-[1.15]">
+              We build custom software and <span className="font-serif-italic text-brand-gradient px-1">cloud platforms</span> for modern businesses.
             </h1>
 
             <p className="text-lg text-slate-600 leading-relaxed font-sans max-w-2xl">
@@ -162,8 +162,8 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl space-y-2 mb-12">
-            <h2 className="text-xs uppercase tracking-widest font-extrabold text-blue-600">What We Do</h2>
-            <h3 className="text-3xl font-extrabold text-slate-900 font-heading">Services tailored to your technical goals</h3>
+            <h2 className="text-xs uppercase tracking-widest font-bold text-blue-600">What We Do</h2>
+            <h3 className="text-3xl font-normal text-slate-900">Services tailored to your <span className="font-serif-italic text-brand-gradient px-1">technical goals</span></h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -185,8 +185,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
             <div>
-              <h2 className="text-xs uppercase tracking-widest font-extrabold text-blue-600">Selected Work</h2>
-              <h3 className="text-3xl font-extrabold text-slate-900 font-heading mt-1">Recent projects we've built</h3>
+              <h2 className="text-xs uppercase tracking-widest font-bold text-blue-600">Selected Work</h2>
+              <h3 className="text-3xl font-normal text-slate-900 mt-1">Recent projects we've <span className="font-serif-italic text-brand-gradient px-1">engineered</span></h3>
             </div>
             <Link href="/portfolio" className="text-sm font-semibold text-blue-600 hover:text-blue-700 flex items-center space-x-1 group">
               <span>View all projects</span>
@@ -221,8 +221,8 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl space-y-2 mb-12">
-            <h2 className="text-xs uppercase tracking-widest font-extrabold text-blue-600">Our Process</h2>
-            <h3 className="text-3xl font-extrabold text-slate-900 font-heading">Simple, transparent engineering</h3>
+            <h2 className="text-xs uppercase tracking-widest font-bold text-blue-600">Our Process</h2>
+            <h3 className="text-3xl font-normal text-slate-900">Simple, transparent <span className="font-serif-italic text-brand-gradient px-1">engineering</span></h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -254,7 +254,7 @@ export default function Home() {
       {/* CTA BANNER */}
       <section className="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-3xl bg-brand-gradient p-8 sm:p-14 text-white text-center shadow-xl shadow-blue-500/20">
-          <h2 className="text-3xl sm:text-4xl font-extrabold font-heading">Have a project in mind?</h2>
+          <h2 className="text-3xl sm:text-4xl font-normal">Have a project in <span className="font-serif-italic text-white underline decoration-teal-400 px-1">mind</span>?</h2>
           <p className="text-blue-100 text-base mt-2 max-w-xl mx-auto font-sans">
             Tell us about what you're building. We'd love to help bring your vision to life.
           </p>

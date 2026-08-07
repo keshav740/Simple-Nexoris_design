@@ -68,8 +68,8 @@ export default function Services() {
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-blue-700 px-3.5 py-1.5 bg-blue-50 border border-blue-200/80 rounded-full shadow-xs">
             Our Capabilities
           </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-heading max-w-3xl">
-            End-to-end software <span className="text-brand-gradient">development services</span>.
+          <h1 className="text-4xl sm:text-5xl font-normal text-slate-900 tracking-tight leading-tight max-w-3xl">
+            End-to-end software <span className="font-serif-italic text-brand-gradient px-1">development services</span>.
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl leading-relaxed font-sans">
             From initial concept and prototype design to production deployment and cloud scaling, we handle the entire software lifecycle.
@@ -106,8 +106,8 @@ export default function Services() {
       <section className="py-20 bg-slate-50/60 border-t border-slate-200/70">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 space-y-2">
-            <h2 className="text-xs uppercase tracking-widest font-extrabold text-blue-600">Questions</h2>
-            <h3 className="text-3xl font-extrabold text-slate-900 font-heading">Frequently Asked Questions</h3>
+            <h2 className="text-xs uppercase tracking-widest font-bold text-blue-600">Questions</h2>
+            <h3 className="text-3xl font-normal text-slate-900">Frequently asked <span className="font-serif-italic text-brand-gradient px-1">questions</span></h3>
           </div>
 
           <div className="space-y-4">
