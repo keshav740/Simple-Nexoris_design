@@ -1,23 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
   const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const navLinks = [
     { name: "Home", href: "/" },
-    // { name: "Services", href: "/services" },
-    // { name: "Work", href: "/portfolio" },
-    // { name: "About", href: "/about" },
-     { name: "About", href: "#" },
-    { name: "Services", href: "#" },
-    { name: "Work", href: "#" },
-   
+    { name: "Services", href: "/services" },
+    { name: "Work", href: "/portfolio" },
+    { name: "About", href: "/about" },
   ];
 
-  const isActive = (path) => router.pathname === path;
+  const isActive = (path) => mounted && router.pathname === path;
 
   return (
     <header className="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-slate-200/80">
@@ -29,20 +30,23 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden md:flex items-center space-x-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className={`text-sm font-semibold transition-colors ${
-                isActive(link.href)
-                  ? "text-blue-600 font-bold"
-                  : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              {link.name}
-            </Link>
-          ))}
+        <nav className="hidden md:flex items-center space-x-2">
+          {navLinks.map((link) => {
+            const active = isActive(link.href);
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={`text-sm font-semibold transition-all px-3.5 py-1.5 rounded-lg ${
+                  active
+                    ? "text-blue-600 font-bold bg-blue-50/90 border border-blue-200/70 shadow-xs"
+                    : "text-slate-600 hover:text-slate-900 hover:bg-slate-100/60"
+                }`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* CTA Button */}
@@ -55,8 +59,8 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile Toggle */}
-        <div className="md:hidden">
+        {/* Mobile Hamburger */}
+        <div className="md:hidden flex items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 text-slate-600 hover:text-slate-900"
@@ -74,8 +78,8 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className={`block py-2 text-base font-semibold ${
-                isActive(link.href) ? "text-blue-600 font-bold" : "text-slate-700"
+              className={`block px-3 py-2 rounded-lg text-base font-semibold ${
+                isActive(link.href) ? "text-blue-600 font-bold bg-blue-50 border border-blue-200/60" : "text-slate-700"
               }`}
             >
               {link.name}
