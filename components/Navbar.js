@@ -8,9 +8,13 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "Work", href: "/portfolio" },
-    { name: "About", href: "/about" },
+    // { name: "Services", href: "/services" },
+    // { name: "Work", href: "/portfolio" },
+    // { name: "About", href: "/about" },
+     { name: "About", href: "#" },
+    { name: "Services", href: "#" },
+    { name: "Work", href: "#" },
+   
   ];
 
   const isActive = (path) => router.pathname === path;
