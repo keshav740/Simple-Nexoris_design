@@ -99,7 +99,7 @@ export default function Home() {
               <span>SOFTWARE & CLOUD ENGINEERING</span>
             </span>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-slate-900 tracking-tight leading-[1.15]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-normal text-slate-900 tracking-tight leading-[1.15]">
               We build custom software and <span className="font-serif-italic text-brand-gradient px-1">cloud platforms</span> for modern businesses.
             </h1>
 
@@ -125,14 +125,16 @@ export default function Home() {
 
           {/* Product Dashboard Visual */}
           <div className="mt-14 rounded-2xl border border-slate-200/80 bg-white p-5 sm:p-6 shadow-soft-lg">
-            <div className="flex items-center justify-between pb-4 border-b border-slate-100">
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-red-400" />
-                <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                <div className="w-3 h-3 rounded-full bg-green-400" />
-                <span className="text-xs font-mono text-slate-400 ml-2">app.nexoris.com/analytics</span>
+            <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-slate-100">
+              <div className="flex items-center space-x-2 min-w-0">
+                <div className="flex items-center space-x-1.5 shrink-0">
+                  <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                </div>
+                <span className="text-[11px] sm:text-xs font-mono text-slate-400 truncate ml-1">app.nexoris.com/analytics</span>
               </div>
-              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200">
+              <span className="text-[11px] sm:text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200 shrink-0">
                 Live Overview
               </span>
             </div>

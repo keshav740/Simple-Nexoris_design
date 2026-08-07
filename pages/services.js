@@ -68,7 +68,7 @@ export default function Services() {
           <span className="inline-block text-xs font-bold uppercase tracking-wider text-blue-700 px-3.5 py-1.5 bg-blue-50 border border-blue-200/80 rounded-full shadow-xs">
             Our Capabilities
           </span>
-          <h1 className="text-4xl sm:text-5xl font-normal text-slate-900 tracking-tight leading-tight max-w-3xl">
+          <h1 className="text-3xl sm:text-5xl font-normal text-slate-900 tracking-tight leading-tight max-w-3xl">
             End-to-end software <span className="font-serif-italic text-brand-gradient px-1">development services</span>.
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl leading-relaxed font-sans">
